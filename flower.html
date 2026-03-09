@@ -311,5 +311,12 @@
     <audio autoplay loop id="musik">
   <source src="lagu-bruno.mp3" type="audio/mpeg">
 </audio>
+<script>
+let music = document.getElementById("musik");
+
+music.addEventListener("loadeddata", function() {
+  music.currentTime = 24; 
+});
+</script>
   </body>
 </html>
